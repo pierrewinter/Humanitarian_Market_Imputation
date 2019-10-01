@@ -1,0 +1,8 @@
+# Default .gitignore
+# Ignore all dotfiles.
+.*
+
+# Explicitly include .gitignore.
+!/.gitignore
+# Explicitly include all gitkeep files.
+!*.gitkeep
