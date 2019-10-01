@@ -9,8 +9,8 @@ Your Hack4Good team (:
 
 
 **Useful Links:**
-*  [H4G HS19 Edition Google Drive](https://drive.google.com/drive/u/0/folders/1p5Awymj_6LCbqOPSv4eb9XYuxB1-CUnK) (for scheduling calls and asking questions to IMPACT Initiatives)
-*  [IMPACT Initiatives Website](https://www.impact-initiatives.org)
+*  [H4G HS19 Edition Google Drive](https://drive.google.com/drive/u/0/folders/0ABpSrE_j2_nHUk9PVA)
+*  [Internal Displacement Monitoring Centre Website](http://www.internal-displacement.org)
 
 **Workshop Dates:**
 
