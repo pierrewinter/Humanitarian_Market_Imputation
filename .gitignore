@@ -6,3 +6,6 @@
 !/.gitignore
 # Explicitly include all gitkeep files.
 !*.gitkeep
+
+# Ignore all files in the data folder. 
+data/*
