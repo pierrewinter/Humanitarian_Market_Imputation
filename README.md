@@ -1,9 +1,7 @@
 **Introduction:**  
-Welcome to the GitLab Repo for the HS19 edition of Hack4Good.  
-
+This repository contains work done as part of the Fall 2019 Hack4Good Event at ETH Zurich in which our team developed a data science solution to a humanitarian problem in 8 weeks. Our team consisted of 4 ETH Zurich students and we collaborated with IMPACT Initiatives, an NGO which monitors and evaluates humanitarian and development interventions in order to support aid actors in assessing the efficiency and efficacy of their programmes. We present analytical methods which impute missing price values in a sparse dataset. This allows for more accurate and effective cash-based humanitarian programming around the world.
 
 **Useful Links:**
-*  [H4G HS19 Edition Google Drive](https://drive.google.com/drive/u/0/folders/0ABpSrE_j2_nHUk9PVA)
 *  [IMPACT Initiatives Website](https://www.impact-initiatives.org)
 
 
