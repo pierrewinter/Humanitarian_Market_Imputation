@@ -3,7 +3,7 @@ This repository contains work done as part of the Fall 2019 Hack4Good Event at E
 
 **Useful Links:**
 *  [IMPACT Initiatives Website](https://www.impact-initiatives.org)
-
+*  [Hack4Good 2019](https://analytics-club.org/hack4good)
 
 **Comment Section**
 Three distinct methods to impute a sparse matrix of price data have been made available as follows.
