@@ -7,6 +7,29 @@ Welcome to the GitLab Repo for the HS19 edition of Hack4Good.
 *  [IMPACT Initiatives Website](https://www.impact-initiatives.org)
 
 
+**Comment Section**
+Three distinct methods to impute a sparse matrix of price data have been made available as follows.
+
+Python-based Sequential Forward Fill
+	/data/processed		ffill_imputed is an imputed and complete Dataset1.
+	/src/utils			hack4good_impact_create_melt.py, which reformats a price data matrix to 
+						prepare for imputation in hack4good_impact_imputation_ffill.py.
+						hack4good_impact_imputation.py for sequential imputation of NA by increasingly coarse methods.
+
+
+Python-based Adapted K-Nearest Neighbors (KNN)
+	/data/processed		contains Dataset1_KNNimputed, imputed based on
+	/src/utils			KNN_imputation. 
+						KNN_results reproduces the graph with RMSE vs ratio of values removed.
+
+
+R-based Multivariate Imputation by Chained Equations (MICE)
+	/src/utils 			contains boot_mice.R, the function that creates random NAs and computes the nRMSE for a given dataset. 
+						final_mice.R is the script with which the average of 20 iterations of bootstrap for 
+						proportions of missingness from 0.1 to 0.8 is calculated. 
+						plots_mice.R is the script used to create the density plots and creates the imputation for Dataset1 and Dataset2.
+
+
 ```
 ├── LICENSE
 │
