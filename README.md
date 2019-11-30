@@ -3,45 +3,45 @@ This repository contains work done as part of the Fall 2019 Hack4Good Event at E
 
 **Useful Links:**
 *  [IMPACT Initiatives Website](https://www.impact-initiatives.org)
-*  [Hack4Good 2019](https://analytics-club.org/hack4good)
 
-**Folder Structure**
+
+**Comment Section**
+Three distinct methods to impute a sparse matrix of price data have been made available as follows.
+
+Python-based Sequential Forward Fill
+	/data/processed		ffill_imputed is an imputed and complete Dataset1.
+	/src/utils			hack4good_impact_create_melt.py, which reformats a price data matrix to 
+						prepare for imputation in hack4good_impact_imputation_ffill.py.
+						hack4good_impact_imputation.py for sequential imputation of NA by increasingly coarse methods.
+
+
+Python-based Adapted K-Nearest Neighbors (KNN)
+	/data/processed		contains Dataset1_KNNimputed, imputed based on
+	/src/utils			KNN_imputation. 
+						KNN_results reproduces the graph with RMSE vs ratio of values removed.
+
+
+R-based Multivariate Imputation by Chained Equations (MICE)
+	/src/utils 			contains boot_mice.R, the function that creates random NAs and computes the nRMSE for a given dataset. 
+						final_mice.R is the script with which the average of 20 iterations of bootstrap for 
+						proportions of missingness from 0.1 to 0.8 is calculated. 
+						plots_mice.R is the script used to create the density plots and creates the imputation for Dataset1 and Dataset2.
+
 
 ```
 ├── LICENSE
 │
 │
 ├── README.md                <- The top-level README for developers using this project
-│
-├── environment.yml          <- Python environment
-│                               
+│                          
 │
 ├── data
-│   ├── processed            <- The final, canonical data sets for modeling.
-│   └── raw                  <- The original, immutable data dump.
-│
-│
-├── misc                     <- miscellaneous
-│
-│
-├── notebooks                <- Jupyter notebooks. Every developper has its own folder for exploratory
-│   ├── name                    notebooks. Usually every model has its own notebook where models are
-│   │   └── exploration.ipynb   tested and optimized. (The present notebooks can be deleted as they are                                      empty and just serve to illustrate the folder structure.)
-│   └── model
-│       └── model_exploration.ipynb <- different optimized models can be compared here if preferred    
-│
+│   └── processed            <- The final, canonical data sets for modeling.
+│ 
 │
 ├── reports                   <- Generated analysis as HTML, PDF, LaTeX, etc.
 │   └── figures               <- Generated graphics and figures to be used in reporting
 │
-│
-├── results
-│   ├── outputs
-│   └── models               <- Trained and serialized models, model predictions, or model summaries
-│                               (if present)
-│
-├── scores                   <- Cross validation scores are saved here. (Automatically generated)
-│   └── model_name           <- every model has its own folder. 
 │
 ├── src                      <- Source code of this project. All final code comes here (Notebooks are thought for exploration)
 │   ├── __init__.py          <- Makes src a Python module
@@ -49,35 +49,7 @@ This repository contains work done as part of the Fall 2019 Hack4Good Event at E
 │   │
 │   │
 │   └── utils                <- Scripts to create exploratory and results oriented visualizations
-│       └── exploration.py      / functions to evaluate models
-│       └── evaluation.py       There is an exemplary implementation of these function in the sample notebook and they should be seen
-                                as a help if you wish to use them. You can completely ignore or delete both files.
+
+
 ```
 
-**How to use a python environment**
-
-The purpose of virtual environments is to ensure that every developper has an identical python installation such that conflicts due to different versions can be minimized.
-
-**Instruction**
-
-Open a console and move to the folder where your environment file is stored.
-
-* create a python env based on a list of packages from environment.yml
-
-  ```conda env create -f environment.yml -n env_your_proj```
-
-* update a python env based on a list of packages from environment.yml
-
-  ```conda env update -f environment.yml -n env_your_proj```
-
-* activate the env  
-
-  ```activate env_your_proj```
-  
-* in case of an issue clean all the cache in conda
-
-   ```conda clean -a -y```
-
-* delete the env to recreate it when too many changes are done  
-
-  ```conda env remove -n env_your_proj```
