@@ -1,16 +1,9 @@
 **Introduction:**  
-Welcome to the GitLab Repo for the HS19 edition of Hack4Good.  
-The repo will be made public and licensed under your name with an open-source 
-license after the end of the program, such that other NGOs and the Humanitarian
-sector may benefit from your great work! That being said, enjoy the ride and use 
-your skills to make this world a better place! 
-
-Your Hack4Good team (:
-
+This repository contains work done as part of the Fall 2019 Hack4Good Event at ETH Zurich in which our team developed a data science solution to a humanitarian problem in 8 weeks. Our team consisted of 4 ETH Zurich students and we collaborated with IMPACT Initiatives, an NGO which monitors and evaluates humanitarian and development interventions in order to support aid actors in assessing the efficiency and efficacy of their programmes. We present analytical methods which impute missing price values in a sparse dataset. This allows for more accurate and effective cash-based humanitarian programming around the world.
 
 **Useful Links:**
-*  [H4G HS19 Edition Google Drive](https://drive.google.com/drive/u/0/folders/0ABpSrE_j2_nHUk9PVA)
 *  [IMPACT Initiatives Website](https://www.impact-initiatives.org)
+*  [Hack4Good 2019](https://analytics-club.org/hack4good)
 
 **Workshop Dates:**
 
@@ -29,7 +22,7 @@ Your Hack4Good team (:
 **Folder Structure**
 
 We have already created a folder structure that should help you starting right away. It should be seen as a guideline and shall help us
-navigate through the code more easily. All present code is exemplatory and you don't have to use any of it. Feel free to delete the existing notebooks as well as the code in src.
+navigate through the code more easily. All present code is exemplary and you don't have to use any of it. Feel free to delete the existing notebooks as well as the code in src.
 
 
 ```
@@ -93,7 +86,7 @@ Open a console and move to the folder where your environment file is stored.
 
 * update a python env based on a list of packages from environment.yml
 
-  ```conda env update -f environment.yml -n env__your_proj```
+  ```conda env update -f environment.yml -n env_your_proj```
 
 * activate the env  
 
