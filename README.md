@@ -5,25 +5,7 @@ This repository contains work done as part of the Fall 2019 Hack4Good Event at E
 *  [IMPACT Initiatives Website](https://www.impact-initiatives.org)
 *  [Hack4Good 2019](https://analytics-club.org/hack4good)
 
-**Workshop Dates:**
-
-| Event | Date | Location |
-| ------ | ------ | ------ |
-| Kick-off |  02.10.19 (Wed) , 17:30 - 21:30| SPH |
-| Hackday 1 |  05.10.19 (Sat) , 09:00 - 18:00| SPH |
-| Workshop 1: Agile Workshop |  09.10.19 (Wed) , 17:30 - 21:30| SPH |
-| Workshop 2: Feedback Workshop |  16.10.19 (Wed) , 17:30 - 21:30| SPH |
-| Workshop 3: Impact Workshop |  23.10.19 (Wed) , 17:30 - 21:30| SPH |
-| Workshop 4: Pitch Workshop |  30.10.19 (Wed) , 17:30 - 21:30| SPH |
-| Hackday 2 |  10.11.19 (Sat) , 09:00 - 18:00| SPH |
-| Workshop 5: Dry-run Workshop |  13.11.19 (Wed) , 17:30 - 21:30| SPH |
-| Final Event |  20.11.19 (Wed) , 17:30 - 21:30| SPH |
-
 **Folder Structure**
-
-We have already created a folder structure that should help you starting right away. It should be seen as a guideline and shall help us
-navigate through the code more easily. All present code is exemplary and you don't have to use any of it. Feel free to delete the existing notebooks as well as the code in src.
-
 
 ```
 ├── LICENSE
