@@ -1,5 +1,7 @@
 **Introduction:**  
-This repository contains the report "Imputation of Missing Price Values: Supporting Cash-Based Humanitarian Responses in Northern Syria" along with the supporting data and source code. It was created as part of the Fall 2019 Hack4Good Event at ETH Zurich in which our team developed a data science solution to a humanitarian problem in 8 weeks. Our team consisted of 4 ETH Zurich students and we collaborated with IMPACT Initiatives, an NGO which monitors and evaluates humanitarian and development interventions in order to support aid actors in assessing the efficiency and efficacy of their programmes. We present analytical methods which impute missing price values in a sparse data set. This allows for more accurate and effective cash-based humanitarian programming in conflict regions around the world.
+This repository contains the report "Imputation of Missing Price Values: Supporting Cash-Based Humanitarian Responses in Northern Syria" along with the supporting data and source code. It was created as part of the Fall 2019 Hack4Good Event at ETH Zurich in which our team developed a data science solution to a humanitarian problem in 8 weeks.
+
+Our team consisted of 4 ETH Zurich students and we collaborated with IMPACT Initiatives, an NGO which monitors and evaluates humanitarian and development interventions in order to support aid actors in assessing the efficiency and efficacy of their programmes. We present analytical methods which impute missing price values in a sparse data set. This allows for more accurate and effective cash-based humanitarian programming in conflict regions around the world.
 
 **Useful Links:**
 *  [IMPACT Initiatives Website](https://www.impact-initiatives.org)
