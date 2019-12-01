@@ -10,23 +10,23 @@ Three distinct methods to impute a sparse matrix of price data have been made av
 
 1. Python-based Sequential Forward Fill
 
-/data/processed	- - - ffill_imputation.csv is an imputed and complete Dataset1\
-/src/utils - - - hack4good_impact_create_melt.py reformats a price data matrix to prepare for imputation in hack4good_impact_imputation_ffill.py\
-/src/utils - - - hack4good_impact_imputation_ffill.py performs sequential imputation of NA by increasingly coarse methods
+    /data/processed	- - - Dataset1_FFILLimputed.csv is an imputed and complete Dataset1\
+    /src/FFILL - - - hack4good_impact_create_melt.py reformats a price data matrix to prepare for imputation in hack4good_impact_imputation_ffill.py\
+    /src/FFILL - - - hack4good_impact_imputation_ffill.py performs sequential imputation of NA by increasingly coarse methods
 
 
 2. Python-based Adapted K-Nearest Neighbors (KNN)
 
-/data/processed - - - Dataset1_KNNimputed.csv is an imputed and complete Dataset1\
-/src/utils - - - KNN_imputation.py performs KNN imputation of NA by grouping over time series\
-/src/utils - - - KNN_results.py produces plots of nRMSE vs percentage of values removed
+    /data/processed - - - Dataset1_KNNimputed.csv is an imputed and complete Dataset1\
+    /src/KNN - - - KNN_imputation.py performs KNN imputation of NA by grouping over time series\
+    /src/KNN - - - KNN_results.py produces plots of nRMSE vs percentage of values removed
 
 
 3. R-based Multivariate Imputation by Chained Equations (MICE)
 
-/src/utils - - - boot_mice.R creates random NA values and computes the nRMSE for a given dataset\
-/src/utils - - - final_mice.R takes the average error over 20 bootstrap iterations as a function of percentage of values removed\
-/src/utils - - - plots_mice.R creates the density plots and creates the imputation for Dataset1 and Dataset2
+    /src/MICE - - - boot_mice.R creates random NA values and computes the nRMSE for a given dataset\
+    /src/MICE - - - final_mice.R takes the average error over 20 bootstrap iterations as a function of percentage of values removed\
+    /src/MICE - - - plots_mice.R creates the density plots and creates the imputation for Dataset1 and Dataset2
 
 
 ```
@@ -44,9 +44,11 @@ Three distinct methods to impute a sparse matrix of price data have been made av
 │
 │
 ├── src                      <- Source code of this project. All final code comes here (Notebooks are thought for exploration)
-│   │
-│   └── utils                <- Scripts to create visualizations, parse datasets, and create results
-
-
+    │
+    └── FFILL                <- Scripts used for forward fill imputation (Python)
+    │
+    └── KNN                <- Scripts used for adapted KNN imputation (Python)
+    │
+    └── MICE                <- Scripts used for MICE imputation (R)
 ```
 
