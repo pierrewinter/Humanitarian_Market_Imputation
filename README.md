@@ -5,24 +5,28 @@ This repository contains the report "Imputation of Missing Price Values: Support
 *  [IMPACT Initiatives Website](https://www.impact-initiatives.org)
 *  [Hack4Good 2019](https://analytics-club.org/hack4good)
 
-**Comment Section**
+**Imputation Methods:**\
 Three distinct methods to impute a sparse matrix of price data have been made available as follows.
 
-Python-based Sequential Forward Fill;
+1. Python-based Sequential Forward Fill
 
-/data/processed	- - - ffill_imputed is an imputed and complete Dataset1.
-/src/utils - - - hack4good_impact_create_melt.py, which reformats a price data matrix to prepare for imputation in hack4good_impact_imputation_ffill.py; - - - hack4good_impact_imputation.py for sequential imputation of NA by increasingly coarse methods.
-
-
-Python-based Adapted K-Nearest Neighbors (KNN);
-
-/data/processed - - - contains Dataset1_KNNimputed, imputed based on KNN_imputation.
-/src/utils - - - KNN_imputation - - - KNN_results reproduces the graph with RMSE vs ratio of values removed.
+/data/processed	- - - ffill_imputation.csv is an imputed and complete Dataset1\
+/src/utils - - - hack4good_impact_create_melt.py reformats a price data matrix to prepare for imputation in hack4good_impact_imputation_ffill.py\
+/src/utils - - - hack4good_impact_imputation_ffill.py performs sequential imputation of NA by increasingly coarse methods
 
 
-R-based Multivariate Imputation by Chained Equations (MICE);
+2. Python-based Adapted K-Nearest Neighbors (KNN)
 
-/src/utils - - - contains boot_mice.R, the function that creates random NAs and computes the nRMSE for a given dataset - - - final_mice.R is the script with which the average of 20 iterations of bootstrap for proportions of missingness from 0.1 to 0.8 is calculated - - - plots_mice.R is the script used to create the density plots and creates the imputation for Dataset1 and Dataset2.
+/data/processed - - - Dataset1_KNNimputed.csv is an imputed and complete Dataset1\
+/src/utils - - - KNN_imputation.py performs KNN imputation of NA by grouping over time series\
+/src/utils - - - KNN_results.py produces plots of nRMSE vs percentage of values removed
+
+
+3. R-based Multivariate Imputation by Chained Equations (MICE)
+
+/src/utils - - - boot_mice.R creates random NA values and computes the nRMSE for a given dataset\
+/src/utils - - - final_mice.R takes the average error over 20 bootstrap iterations as a function of percentage of values removed\
+/src/utils - - - plots_mice.R creates the density plots and creates the imputation for Dataset1 and Dataset2
 
 
 ```
@@ -33,19 +37,15 @@ R-based Multivariate Imputation by Chained Equations (MICE);
 │                          
 │
 ├── data
-│   └── processed            <- The final, canonical data sets for modeling.
+│   └── processed            <- The final imputed data sets for modeling.
 │ 
 │
-├── reports                   <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures               <- Generated graphics and figures to be used in reporting
+├── reports                   <- Written report in PDF format
 │
 │
 ├── src                      <- Source code of this project. All final code comes here (Notebooks are thought for exploration)
-│   ├── __init__.py          <- Makes src a Python module
-│   ├── main.py              <- main file, that can be called.
 │   │
-│   │
-│   └── utils                <- Scripts to create exploratory and results oriented visualizations
+│   └── utils                <- Scripts to create visualizations, parse datasets, and create results
 
 
 ```
