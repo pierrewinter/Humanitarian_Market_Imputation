@@ -1,56 +1,21 @@
-**Introduction:**  
-This repository contains the report "Imputation of Missing Price Values: Supporting Cash-Based Humanitarian Responses in Northern Syria" along with the supporting data and source code. It was created as part of the Fall 2019 Hack4Good Event at ETH Zurich in which our team developed a data science solution to a humanitarian problem in 8 weeks. Check out the report in the reports folder!
+# Delivering Cash-Based Assistance to Syrian Communities :ambulance:  
+Humanitarian aid organizations are unable to provide accurate cash-based assistance in conflict regions. This is often due to the lack of pricing information for basic necessities found in local markets. How can we estimate missing prices of market goods in Syria such that families in need are given an adequate amount of aid?
 
-Our team consisted of 4 ETH Zurich students and we collaborated with IMPACT Initiatives, an NGO which monitors and evaluates humanitarian and development interventions in order to support aid actors in assessing the efficiency and efficacy of their programmes. We present analytical methods which impute missing price values in a sparse data set. This allows for more accurate and effective cash-based humanitarian programming in conflict regions around the world.
+**Project Overview**
 
-**Useful Links:**
+This repository contains source code, supporting data, and a final written report of our data science solution. It was developed in 8 weeks by a team of 4 data scientists at ETH Zurich. We collaborated with IMPACT Initiatives, an NGO which monitors and evaluates humanitarian interventions in order to support aid actors in assessing the efficacy of their programs. We present analytical methods which impute missing price values and allow for more effective cash-based humanitarian programming in conflict regions around the world.
+
+**Useful Links**
 *  [IMPACT Initiatives Website](https://www.impact-initiatives.org)
 *  [Hack4Good 2019](https://analytics-club.org/hack4good)
 
-**Imputation Methods:**\
+**Solutions**
+
 Three distinct methods to impute a sparse matrix of price data have been made available as follows.
 
-1. Python-based Sequential Forward Fill
+Sequential Forward Fill - Python
 
-    /data/processed	- - - Dataset1_FFILLimputed.csv is an imputed and complete Dataset1\
-    /src/FFILL - - - hack4good_impact_create_melt.py reformats a price data matrix to prepare for imputation in hack4good_impact_imputation_ffill.py\
-    /src/FFILL - - - hack4good_impact_imputation_ffill.py performs sequential imputation of NA by increasingly coarse methods
+Adapted K-Nearest Neighbors (KNN) - Python
 
-
-2. Python-based Adapted K-Nearest Neighbors (KNN)
-
-    /data/processed - - - Dataset1_KNNimputed.csv is an imputed and complete Dataset1\
-    /src/KNN - - - KNN_imputation.py performs KNN imputation of NA by grouping over time series\
-    /src/KNN - - - KNN_results.py produces plots of nRMSE vs percentage of values removed
-
-
-3. R-based Multivariate Imputation by Chained Equations (MICE)
-
-    /src/MICE - - - boot_mice.R creates random NA values and computes the nRMSE for a given dataset\
-    /src/MICE - - - final_mice.R takes the average error over 20 bootstrap iterations as a function of percentage of values removed\
-    /src/MICE - - - plots_mice.R creates the density plots and creates the imputation for Dataset1 and Dataset2
-
-
-```
-├── LICENSE
-│
-│
-├── README.md                <- The top-level README for developers using this project
-│                          
-│
-├── data
-│   └── processed            <- The final imputed data sets for modeling.
-│ 
-│
-├── reports                   <- Written report in PDF format
-│
-│
-├── src                      <- Source code of this project. All final code comes here (Notebooks are thought for exploration)
-    │
-    └── FFILL                <- Scripts used for forward fill imputation (Python)
-    │
-    └── KNN                <- Scripts used for adapted KNN imputation (Python)
-    │
-    └── MICE                <- Scripts used for MICE imputation (R)
-```
+Multivariate Imputation by Chained Equations (MICE) - R
 
