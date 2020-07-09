@@ -1,4 +1,5 @@
-# Delivering Cash-Based Assistance to Syrian Communities :ambulance:
+# Delivering Cash-Based Assistance
+# to Syrian Communities :ambulance:
 
 Humanitarian aid organizations are unable to provide accurate cash-based assistance in conflict regions. This is often due to the lack of pricing information for basic necessities found in local markets. How can we estimate missing prices of market goods in Syria such that families in need are given an adequate amount of aid?
 
